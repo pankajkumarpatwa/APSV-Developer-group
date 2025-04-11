@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJU Smart Campus...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="images/https://aju.mastersofterp.in/bootstrap/img/aju_login7.png">
+    <hedader>
+        <h1>🎓 AJU SMART CAMPUS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#canteen">Canteen</a></li>
+            <li><a href="#issues">Report Issue</a></li>
+            <li><a href="#lost-found">Lost & Found</a></li>
+            <li><a href="#bus-tracking">Bus Tracking</a></li>
+            <li><a href="#parking">Parking</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#map">Campus Map</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section id="canteen" class="feature-section">
+            <h2>Canteen Pre-ordering ₹</h2>
+            <div id="canteen-menu">
+                <!-- Canteen menu items will be dynamically added here by Java -->
+                <!-- Order status updates will be displayed here -->
+            </div>
+        </section>
+
+        <section id="issues" class="feature-section">
+            <h2>Report Issue</h2>
+            <form id="issue-report-form">
+                <label for="issue-type">Issue Type:</label>
+                <select id="issue-type" name="issue-type">
+                    <option value="cleanliness">Cleanliness</option>
+                    <option value="maintenance">Maintenance</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="issue-description">Description:</label>
+                <textarea id="issue-description" name="issue-description" rows="4"></textarea>
+                <label for="issue-location">Location (Optional):</label>
+                <input type="text" id="issue-location" name="issue-location">
+                <button type="submit">Submit Issue</button>
+            </form>
+            <div id="issue-report-status">
+                <!-- Issue report status will be displayed here -->
+            </div>
+        </section>
+
+        <section id="lost-found" class="feature-section">
+            <h2>Lost & Found</h2>
+            <div class="lost-found-actions">
+                <button id="report-lost-btn">Report Lost Item</button>
+                <button id="report-found-btn">Report Found Item</button>
+            </div>
+            <header>hello!</header>
+            <div id="lost-found-forms" class="hidden">
+                <form id="report-lost-form" class="hidden">
+                    <h3>Report Lost Item</h3>
+                    <label for="lost-item-name">Item Name:</label>
+                    <input type="text" id="lost-item-name" name="lost-item-name" required>
+                    <label for="lost-item-description">Description:</label>
+                    <textarea id="lost-item-description" name="lost-item-description" rows="3"></textarea>
+                    <label for="lost-item-location">Lost Location (Approximate):</label>
+                    <input type="text" id="lost-item-location" name="lost-item-location">
+                    <button type="submit">Report Lost</button>
+                </form>
+
+                <form id="report-found-form" class="hidden">
+                    <h3>Report Found Item</h3>
+                    <label for="found-item-name">Item Name (if known):</label>
+                    <input type="text" id="found-item-name" name="found-item-name">
+                    <label for="found-item-description">Description:</label>
+                    <textarea id="found-item-description" name="found-item-description" rows="3"></textarea>
+                    <label for="found-item-location">Found Location:</label>
+                    <input type="text" id="found-item-location" name="found-item-location" required>
+                    <button type="submit">Report Found</button>
+                </form>
+            </div>
+            <div id="lost-found-items">
+                <!-- Display reported lost and found items here -->
+            </div>
+        </section>
+
+        <section id="bus-tracking" class="feature-section">
+            <h2>Bus Tracking</h2>
+            <div id="bus-routes">
+                <!-- Bus routes and tracking info will be added here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="parking" class="feature-section">
+            <h2>Parking Availability</h2>
+            <div id="parking-info">
+                <!-- Parking availability info will be displayed here -->
+            </div>
+        </section>
+
+        <section id="events" class="feature-section">
+            <h2>Campus Events</h2>
+            <div id="event-list">
+                <!-- Event list will be added here by JavaScript -->
+            </div>
+            <div id="event-notifications">
+                <!-- Event notifications will be displayed here -->
+            </div>
+        </section>
+
+        <section id="map" class="feature-section">
+            <h2>Campus Map</h2>
+            <div id="campus-map">
+                <!-- Interactive campus map will be here (for simplicity, could be a static image placeholder) -->
+                <img src="campus-map-placeholder.png" alt="Campus Map" style="max-width:100%; height:auto;">
+                <p style="text-align: center; font-size: 0.8em;">[Placeholder Campus Map Image - Replace with interactive map in a real application]</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Smart Campus App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
